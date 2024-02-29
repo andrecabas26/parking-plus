@@ -32,18 +32,33 @@
       </div>
 
       <div class="contenedor-formulario">
-        <p style="text-align: center; color: var(--grisOscuro);">Ingreso al sistema</p>
+        <p style="text-align: center; color: var(--grisOscuro)">
+          Ingreso al sistema
+        </p>
         <form>
-          <label style="font-weight: bold;">Usuario</label>
-          <input type="text" />
+          <label style="font-weight: bold">Usuario</label>
+          <input type="text" id="usuario" />
 
-          <label style="font-weight: bold;">Clave</label>
-          <input type="password" />
+          <label style="font-weight: bold">Clave</label>
+          <input type="password" id="clave" />
 
-          <button>Ingresar</button>
+          <button onclick="ingresarAlSistema()">Ingresar</button>
         </form>
       </div>
-      <p> &copy; andrea cabas - SystemPlus Popayán</p>
+      <p>&copy; Andrés Giraldo - SystemPlus Popayán</p>
     </div>
+
+    <script>
+      function ingresarAlSistema() {
+        const inputUsuario = document.getElementById("usuario");
+        const inputClave = document.getElementById("clave");
+
+        if (inputUsuario.value == "andres" && inputClave.value == 123456) {
+          alert("Puedes ingresar al sistema");
+        } else {
+          alert("No estás autorizado a ingresar");
+        }
+      }
+    </script>
   </body>
 </html>
