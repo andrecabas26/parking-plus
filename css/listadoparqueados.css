@@ -4,6 +4,7 @@
     margin: 0 auto;
     padding: 2rem;
     overflow-x: auto;
+    border-radius: 15px;
 }
 
 .tabla {
@@ -14,6 +15,8 @@
     border: 1px solid var(--grisOscuro);
     padding: 8px;
     text-align: left;
+    border-left: none;
+    border-right: none;
 }
 
 i {

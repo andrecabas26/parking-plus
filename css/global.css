@@ -3,13 +3,18 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 :root {
   --rojoPrincipal: #cb341d;
   --grisClaro: #d9d9d9;
   --grisOscuro: #535353;
   --verde: #56B834;
   --azul: #456FDC;
-  --amarillo: #D7DB07;
+  --amarillo: #fbff00;
 }
 
 .inter-400 {
